@@ -21,7 +21,7 @@ const partners: Partner[] = [
 
 export default function Partners() {
   return (
-    <div className="py-2">
+    <div className="py-2" id="benefits">
       <Marquee className="" autoFill>
         <div className="inline-flex gap-x-4">
           {partners.map((partner, index) => {

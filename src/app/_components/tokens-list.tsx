@@ -1,5 +1,4 @@
 "use client";
-
 import { type Token } from "@prisma/client";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -22,10 +21,18 @@ type Args = {
 };
 
 export default function TokensList({ tokens, session }: Args) {
-  const isAdmin = session?.user.email === "alananisimov@gmail.com";
+  const isAdmin =
+    session?.user.email ===
+    ("alananisimov@gmail.com" || "georgejefrey89@gmail.com");
   const [api, setApi] = useState<CarouselApi>();
+
   return (
     <div>
+      <div className="hidden md:block">
+        <MoveForward type="forward" api={api} />
+        <MoveForward type="back" api={api} />
+      </div>
+
       <Carousel
         setApi={setApi}
         plugins={[
@@ -38,11 +45,11 @@ export default function TokensList({ tokens, session }: Args) {
           {tokens.map((el, i) => {
             return (
               <CarouselItem
-                className="-pl-4 flex flex-col bg-white md:basis-1/2 lg:basis-1/3"
+                className="-pl-4 flex flex-col bg-white md:basis-1/2 xl:basis-1/2"
                 key={i}
               >
                 <div className="flex w-full items-center bg-[#5AB5B8] px-10 py-6 text-4xl font-normal leading-[42.70px] tracking-tight text-neutral-800">
-                  {el.name}
+                  <span className="line-clamp-1">{el.name}</span>
                   <EditSheet token={el} isAdmin={isAdmin} />
                 </div>
                 <div className="h-full p-10">
@@ -71,10 +78,6 @@ export default function TokensList({ tokens, session }: Args) {
             </div>
           )}
         </CarouselContent>
-        <div className="hidden md:block">
-          <MoveForward type="back" api={api} />
-          <MoveForward type="forward" api={api} />
-        </div>
       </Carousel>
     </div>
   );

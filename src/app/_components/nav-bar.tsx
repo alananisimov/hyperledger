@@ -7,15 +7,15 @@ import TgJoinBtn from "./tg-join-btn";
 import { Logo } from "./icons/logo";
 const navigation = [
   { name: "TOKENS", href: "#tokens" },
-  { name: "BENEFITS", href: "#benefits" },
+  { name: "OUR PARTNERS", href: "#benefits" },
   { name: "ABOUT US", href: "#about" },
 ];
 
-export default function NavBar() {
+export default function NavBar({ classname }: { classname: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white font-sans">
+    <div className={`${classname} flex flex-col`}>
       <header className="absolute inset-x-0 top-0 z-50 bg-[#013A44]">
         <nav
           className="flex items-center justify-between p-4 lg:px-20"
@@ -27,8 +27,9 @@ export default function NavBar() {
               <Image
                 src={"/logo.svg"}
                 alt=""
-                width={200}
-                height={100}
+                width={100}
+                priority
+                height={48}
                 className="h-12 w-auto"
               />
             </a>
@@ -87,8 +88,9 @@ export default function NavBar() {
                   {navigation.map((item) => (
                     <a
                       key={item.name}
+                      onClick={() => setMobileMenuOpen(false)}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-black hover:bg-gray-50"
                     >
                       {item.name}
                     </a>

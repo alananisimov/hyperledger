@@ -8,11 +8,9 @@ import Partners from "./_components/partners";
 import TokensList from "./_components/tokens-list";
 import { space_mono } from "./layout";
 import About from "./_components/about";
+import { OurTokensDialog } from "./_components/our-tokens-dialog";
 export default async function Home() {
   noStore();
-  const tokens = await api.tokens.getTokens.query();
-  const session = await getServerAuthSession();
-  console.log(session);
   return (
     <div className={`${space_mono.className} flex flex-col`}>
       <div className="relative isolate h-screen ">
@@ -22,7 +20,7 @@ export default async function Home() {
           className="absolute -z-10 h-full w-auto object-cover"
         />
 
-        <div className="mx-auto w-full px-6 pt-14 lg:px-8 " id="benefits">
+        <div className="mx-auto w-full px-6 pt-14 lg:px-8 ">
           <div className="mx-auto max-w-3xl  py-32 sm:py-48 md:ml-32 md:mr-auto lg:py-56 ">
             <div className="">
               <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -37,16 +35,18 @@ export default async function Home() {
         </div>
       </div>
       <Partners />
-      <div
-        className=" relative mx-auto my-48 h-full w-full px-6 md:px-16 lg:my-72 lg:px-36"
-        id="tokens"
-      >
-        <div className="absolute -left-0 -top-56 -z-10 w-screen overflow-hidden py-24 ">
-          <div className="-ml-12  w-[calc(100vw+100px)] rotate-[174deg] bg-[#2B626F] px-10 py-96 "></div>
+      <div className="my-32 flex w-full justify-center">
+        <div
+          className=" relative mx-auto my-48 h-full w-full px-6 md:px-16 lg:my-72 lg:px-36"
+          id="tokens"
+        >
+          <div className="absolute -left-0 -top-72 -z-10 w-screen overflow-hidden py-24 md:-top-80 ">
+            <div className="-ml-12  w-[calc(100vw+100px)] rotate-[174deg] bg-[#2B626F] px-10 py-72 md:py-80 "></div>
+          </div>
+          <OurTokensDialog />
         </div>
-        <TokensList tokens={tokens} session={session} />
       </div>
-      <div className="flex w-screen justify-center" id="about">
+      <div className=" flex w-screen justify-center" id="about">
         <About />
       </div>
     </div>

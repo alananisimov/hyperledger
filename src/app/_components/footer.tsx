@@ -2,10 +2,12 @@ import Image from "next/image";
 import TgJoinBtn from "./tg-join-btn";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ classname }: { classname: string }) {
   return (
     <>
-      <div className="mt-12 flex flex-col bg-[#013A44] py-12 md:flex-row md:px-32">
+      <div
+        className={`mt-12 flex flex-col bg-[#013A44] py-12 font-sans md:flex-row md:px-32 ${classname}`}
+      >
         <div className="flex flex-col gap-y-4">
           <Image
             src={"/hyperledger_foundation_logo_vt_green 2 (2).png"}
@@ -50,7 +52,7 @@ export default function Footer() {
             <h3 className="">TOKENS</h3>
           </Link>
           <Link href={"#benefits"}>
-            <h3 className="">BENEFITS</h3>
+            <h3 className="">OUR PARTNERS</h3>
           </Link>
           <Link href={"#about"}>
             <h3 className="">ABOUT US</h3>

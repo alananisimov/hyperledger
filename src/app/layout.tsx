@@ -1,14 +1,14 @@
 import "~/styles/globals.css";
 
-import { Space_Mono } from "next/font/google";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import NavBar from "./_components/nav-bar";
 import { Toaster } from "sonner";
 import Footer from "./_components/footer";
 
-export const space_mono = Space_Mono({
-  weight: ["400"],
+export const space_mono = Space_Grotesk({
+  weight: ["500"],
   subsets: ["latin"],
 });
 
@@ -26,11 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body className={`bg-[#EBEBEC] font-sans ${space_mono.className}`}>
-        <Toaster />
-        <NavBar />
+        <NavBar classname={space_mono.className} />
         <TRPCReactProvider>{children}</TRPCReactProvider>
-        <Footer />
+        <Footer classname={space_mono.className} />
       </body>
+      <Toaster />
     </html>
   );
 }

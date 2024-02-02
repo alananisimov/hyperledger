@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { CibTelegramPlane } from "./icons/tg";
+import Link from "next/link";
 
 export default function TgJoinBtn({ className }: { className: string }) {
   return (
-    <div
+    <Link
+      href={""}
       className={`relative flex items-center justify-center ${className} w-fit`}
     >
       <Image
@@ -19,6 +21,6 @@ export default function TgJoinBtn({ className }: { className: string }) {
         </span>
         JOIN
       </h2>
-    </div>
+    </Link>
   );
 }

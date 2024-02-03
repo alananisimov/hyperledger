@@ -1,18 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { Copy } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import Image from "next/image";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "~/components/ui/dialog";
-import { Label } from "~/components/ui/label";
 import TokensList from "./tokens-list";
 import { api } from "~/trpc/server";
 import { getServerAuthSession } from "~/server/auth";

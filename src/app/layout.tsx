@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 
-import { Space_Grotesk, Space_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import NavBar from "./_components/nav-bar";

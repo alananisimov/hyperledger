@@ -1,11 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
-import { getServerAuthSession } from "~/server/auth";
-import { api } from "~/trpc/server";
 import background from "~/../public/images/background.png";
 import Partners from "./_components/partners";
-import TokensList from "./_components/tokens-list";
 import { space_mono } from "./layout";
 import About from "./_components/about";
 import { OurTokensDialog } from "./_components/our-tokens-dialog";

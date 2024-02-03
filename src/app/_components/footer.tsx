@@ -6,7 +6,7 @@ export default function Footer({ classname }: { classname: string }) {
   return (
     <>
       <div
-        className={` flex flex-col bg-[#013A44] py-12 font-sans md:flex-row md:px-32 ${classname}`}
+        className={` flex flex-col bg-[#013A44] py-12 font-sans md:flex-row md:px-32 ${classname} overflow-hidden`}
       >
         <div className="flex flex-col gap-y-4">
           <Image
@@ -60,7 +60,7 @@ export default function Footer({ classname }: { classname: string }) {
           <TgJoinBtn className="" />
         </div>
       </div>
-      <p className="flex w-screen justify-center bg-[#013A44] pb-6 text-xs text-white md:justify-end md:pr-32 md:text-base">
+      <p className="flex w-full justify-center bg-[#013A44] pb-6 text-xs text-white md:justify-end md:pr-32 md:text-base">
         Copyright © 2024 Hyperledger
       </p>
     </>

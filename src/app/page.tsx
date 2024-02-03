@@ -9,7 +9,9 @@ import { OurTokensDialog } from "./_components/our-tokens-dialog";
 export default async function Home() {
   noStore();
   return (
-    <div className={`${space_mono.className} relative flex flex-col`}>
+    <div
+      className={`${space_mono.className} relative flex flex-col overflow-hidden`}
+    >
       <div className="relative isolate h-screen ">
         <Image
           src={background}

@@ -17,7 +17,7 @@ export default function Move({ type, api }: Args) {
   };
   return (
     <button
-      className={`absolute ${type === "back" ? "left-4 top-1/2 -translate-y-1/2" : "right-4 top-1/2 -translate-y-1/2"}   flex h-20 w-32 items-center justify-center`}
+      className={`absolute z-20 ${type === "back" ? "left-4 top-1/2 -translate-y-1/2" : "right-4 top-1/2 -translate-y-1/2"}   flex h-20 w-32 items-center justify-center`}
       onClick={handleClick}
     >
       <Image

@@ -26,47 +26,44 @@ export async function OurTokensDialog() {
       <DialogTrigger asChild className="mx-auto">
         <div className="flex flex-col items-center space-y-6" id="tokens">
           <button className={`relative flex w-fit items-center justify-center`}>
-            <div className="hidden md:block">
-              <Image
-                src={"/images/rectangle.svg"}
-                alt=""
-                width={420}
-                height={60}
-                className=""
-              />
-            </div>
             <div className=" md:hidden">
               <Image
                 src={"/images/rectangle.svg"}
                 alt=""
+                width={250}
+                height={60}
+                className=""
+                priority
+              />
+            </div>
+            <div className="hidden md:block">
+              <Image
+                src={"/images/rectangle.svg"}
+                alt=""
                 width={320}
+                priority
                 height={50}
                 className=""
               />
             </div>
-            <h2 className="absolute -ml-4 -mt-0.5 inline-flex items-center justify-center gap-x-1 text-3xl font-semibold text-cyan-950 md:text-4xl">
+            <h2 className="absolute -ml-4 -mt-0.5 inline-flex items-center justify-center gap-x-1 text-2xl font-semibold text-cyan-950 md:text-3xl">
               List of tokens
             </h2>
           </button>
         </div>
       </DialogTrigger>
       <DialogContent
-        className={` font-sans sm:max-w-6xl md:px-36 ${space_mono.className}`}
+        className={` font-sans sm:max-w-6xl sm:rounded-none md:px-36 ${space_mono.className} `}
       >
         <DialogHeader>
-          <DialogTitle>Our tokens</DialogTitle>
-          <DialogDescription>You can see our tokens here.</DialogDescription>
+          <DialogTitle className="text-3xl">Our tokens</DialogTitle>
+          <DialogDescription className="text-xl">
+            You can see our tokens here.
+          </DialogDescription>
         </DialogHeader>
         <div className=" overflow-x-auto">
           <TokensList tokens={tokens} session={session} />
         </div>
-        <DialogFooter className="sm:justify-start">
-          <DialogClose asChild>
-            <Button type="button" variant="secondary">
-              Close
-            </Button>
-          </DialogClose>
-        </DialogFooter>
       </DialogContent>
     </Dialog>
   );

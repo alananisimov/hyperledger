@@ -9,9 +9,10 @@ export default function About() {
       <Image
         src={"/brands.svg"}
         alt=""
+        priority
         width={400}
         height={500}
-        className="mx-auto h-auto w-screen max-w-4xl object-cover"
+        className="mx-auto h-auto w-screen max-w-7xl object-cover"
       />
     </div>
   );

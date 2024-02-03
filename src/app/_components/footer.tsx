@@ -6,7 +6,7 @@ export default function Footer({ classname }: { classname: string }) {
   return (
     <>
       <div
-        className={`mt-12 flex flex-col bg-[#013A44] py-12 font-sans md:flex-row md:px-32 ${classname}`}
+        className={` flex flex-col bg-[#013A44] py-12 font-sans md:flex-row md:px-32 ${classname}`}
       >
         <div className="flex flex-col gap-y-4">
           <Image

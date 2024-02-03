@@ -12,11 +12,12 @@ import { OurTokensDialog } from "./_components/our-tokens-dialog";
 export default async function Home() {
   noStore();
   return (
-    <div className={`${space_mono.className} flex flex-col`}>
+    <div className={`${space_mono.className} relative flex flex-col`}>
       <div className="relative isolate h-screen ">
         <Image
           src={background}
           alt=""
+          priority
           className="absolute -z-10 h-full w-auto object-cover"
         />
 
@@ -35,18 +36,35 @@ export default async function Home() {
         </div>
       </div>
       <Partners />
-      <div className="my-32 flex w-full justify-center">
-        <div
-          className=" relative mx-auto my-48 h-full w-full px-6 md:px-16 lg:my-72 lg:px-36"
-          id="tokens"
-        >
-          <div className="absolute -left-0 -top-72 -z-10 w-screen overflow-hidden py-24 md:-top-80 ">
-            <div className="-ml-12  w-[calc(100vw+100px)] rotate-[174deg] bg-[#2B626F] px-10 py-72 md:py-80 "></div>
+
+      <div className=" mx-auto mt-8 w-full max-w-7xl ">
+        <div className="absolute right-0 -z-10 hidden h-fit w-[900px] overflow-hidden md:block">
+          <div className="-mr-60 -mt-20 ml-auto bg-[#2B626F] pt-[53rem] md:w-[800px] md:rotate-[110deg] lg:w-[1100px] "></div>
+        </div>
+        <div className="grid grid-cols-1 gap-10 px-10 py-12 md:grid-cols-2 md:px-24 lg:px-0">
+          <div>
+            <Image
+              alt=""
+              src={"/images/Hyperledger_Projects.webp"}
+              width={400}
+              height={400}
+              className="mx-auto h-auto w-full object-cover md:ml-auto"
+              priority
+            />
           </div>
-          <OurTokensDialog />
+          <div className="mx-auto my-auto flex h-fit w-fit flex-col gap-y-10 md:mx-0 md:ml-auto">
+            <h1 className="text-center text-4xl font-semibold text-black md:text-white lg:text-6xl">
+              Our assets
+            </h1>
+            <OurTokensDialog />
+          </div>
         </div>
       </div>
-      <div className=" flex w-screen justify-center" id="about">
+
+      <div
+        className=" flex w-screen justify-center bg-[white] pb-12 pt-32"
+        id="about"
+      >
         <About />
       </div>
     </div>

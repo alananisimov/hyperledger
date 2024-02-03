@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`bg-[#EBEBEC] font-sans ${space_mono.className}`}>
+      <body className={`bg-[#e5e5e5] font-sans ${space_mono.className}`}>
         <NavBar classname={space_mono.className} />
         <TRPCReactProvider>{children}</TRPCReactProvider>
         <Footer classname={space_mono.className} />

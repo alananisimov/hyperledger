@@ -1,0 +1,181 @@
+### Hyperledger Foundation
+
+### Project 1 - Hyperledger (HPL)
+### Project 2 - Hyperledger BESU (BESU)
+### Project 3 - Hyperledger CACTI (CACTI)
+### Project 4 - Hyperledger ARIES (ARIES)
+### Project 5 - Hyperledger FABRIC (FABRIC)
+### Project 6 - Hyperledger INDY (INDY)
+### Project 7 - Hyperledger SAWTOOTH (SAWTOOTH)
+### Project 8 - Hyperledger FIREFLY (FIREFLY)
+### Project 9 - Hyperledger IROHA (IROHA)
+### Project 10 - Hyperledger SOLANG (SOLANG)
+### Project 11 - Hyperledger CELLO (CELLO)
+### Project 12 - Hyperledger CALIPR (CALIPER)
+### Project 13 - Hyperledger BEVEL (BEVEL) ###
+ 
+NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
+ 
+ACCOUNTS=["GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"]
+[DOCUMENTATION]
+ORG_NAME="Hyperledger Foundation"
+ORG_URL="https://hyperledger-stellar.com"
+ORG_LOGO="https://hyperledger-stellar.com/logo.png"
+
+[[CURRENCIES]]
+code="HPL"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger"
+fixed_number=1000000000
+desc="Hyperledger Foundation is the open source, global ecosystem for enterprise-grade blockchain technologies at the core of critical developments globally."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/logo.png"
+
+
+[[CURRENCIES]]
+code="BESU"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Besu"
+fixed_number=1000000000
+desc="Hyperledger Besu is an Ethereum client designed to be enterprise-friendly for both public and private permissioned network use cases, with an extractable EVM implementation."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/besu.png"
+
+
+
+[[CURRENCIES]]
+code="CACATI"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Cacti"
+fixed_number=1000000000
+desc="Hyperledger Cacti is a blockchain integration tool designed to allow users to securely integrate different blockchains."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/cacti.png"
+
+
+[[CURRENCIES]]
+code="ARIES"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Aries"
+fixed_number=1000000000
+desc="Hyperledger Aries is a shared, reusable, interoperable tool kit for developing critical digital credentials solutions."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/aries.png"
+
+
+[[CURRENCIES]]
+code="FABRIC"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Fabric"
+fixed_number=1000000000
+desc="Hyperledger Fabric - A blockchain framework implementation intended as a foundation for developing applications or solutions with a modular architecture."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/fabric.png"
+
+
+[[CURRENCIES]]
+code="INDY"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Indy"
+fixed_number=1000000000
+desc="A distributed ledger that provides tools, libraries, and reusable components for creating and using independent digital identities."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/indy.png"
+
+
+[[CURRENCIES]]
+code="SAWTOOTH"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Sawtooth"
+fixed_number=1000000000
+desc="Hyperledger Sawtooth offers a flexible and modular architecture separates the core system from the application domain, so smart contracts can specify the business rules for applications without needing to know the underlying design of the core system."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/sawtooth.png"
+
+
+[[CURRENCIES]]
+code="FIREFLY"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Firefly"
+fixed_number=1000000000
+desc="Hyperledger FireFly is the first open source Supernode: a complete stack for enterprises to build and scale secure Web3 applications."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/firefly.png"
+
+
+[[CURRENCIES]]
+code="IROHA"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Iroha"
+fixed_number=1000000000
+desc="A developer friendly blockchain platform written in C++, aimed at helping businesses and financial institutions manage digital assets."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/iroha.png"
+
+
+[[CURRENCIES]]
+code="SOLANG"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Solang"
+fixed_number=1000000000
+desc="Solang is a Solidity compiler written in rust which uses llvm as the compiler backend. Solang can compile Solidity for Solana and Substrate."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/solang.png"
+
+
+[[CURRENCIES]]
+code="CELLO"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Cello"
+fixed_number=1000000000
+desc="A blockchain module toolkit designed to bring the on-demand “as-a-service” deployment model to the blockchain ecosystem."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/cello.png"
+
+
+[[CURRENCIES]]
+code="CALIPER"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Caliper"
+fixed_number=1000000000
+desc="A blockchain benchmark tool designed to allow users to measure the performance of a specific blockchain implementation."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/caliper.png"
+
+
+[[CURRENCIES]]
+code="BEVEL"
+issuer="GDTHRF4KTAB3ROINYVAADDW7SMRMHAXV4QXSEIBUWCWDZQFQYDR2WW6N"
+status="live"
+display_decimals=7
+name="Hyperledger Bevel"
+fixed_number=1000000000
+desc="A blockchain framework implementation intended as a foundation for developing applications or solutions with a modular architecture."
+conditions="Digital Currency"
+image="https://hyperledger-stellar.com/bevel.png"
+
+

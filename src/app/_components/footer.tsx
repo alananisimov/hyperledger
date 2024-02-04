@@ -60,7 +60,7 @@ export default function Footer({ classname }: { classname: string }) {
           <TgJoinBtn className="" />
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center gap-y-4 bg-[#013A44] pb-6 text-xs text-white md:flex-row md:justify-between md:px-32 md:text-base">
+      <div className="flex w-full flex-col items-center justify-center gap-y-4 bg-[#013A44] pb-6 text-xs text-white md:flex-row md:justify-between md:px-28 md:text-base">
         <Image
           src={"/Untitled-2.svg"}
           alt=""

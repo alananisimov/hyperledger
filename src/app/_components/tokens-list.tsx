@@ -1,6 +1,5 @@
 "use client";
 import { type Token } from "@prisma/client";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import {
   Carousel,
@@ -21,9 +20,7 @@ type Args = {
 };
 
 export default function TokensList({ tokens, session }: Args) {
-  const isAdmin =
-    session?.user.email ===
-    ("alananisimov@gmail.com" || "georgejefrey89@gmail.com");
+  const isAdmin = session?.user.email === "georgejefrey89@gmail.com";
   const [api, setApi] = useState<CarouselApi>();
 
   return (
@@ -33,19 +30,12 @@ export default function TokensList({ tokens, session }: Args) {
         <MoveForward type="back" api={api} />
       </div>
 
-      <Carousel
-        setApi={setApi}
-        plugins={[
-          Autoplay({
-            delay: 3000,
-          }),
-        ]}
-      >
+      <Carousel setApi={setApi}>
         <CarouselContent className="gap-x-4">
           {tokens.map((el, i) => {
             return (
               <CarouselItem
-                className="-pl-4 flex flex-col bg-white md:basis-1/2 xl:basis-1/2"
+                className="-pl-4 flex flex-col bg-gray-100 md:basis-1/2 xl:basis-1/2"
                 key={i}
               >
                 <div className="flex w-full items-center bg-[#5AB5B8] px-10 py-6 text-4xl font-normal leading-[42.70px] tracking-tight text-neutral-800">
